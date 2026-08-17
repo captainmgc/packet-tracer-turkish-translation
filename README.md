@@ -16,10 +16,21 @@ Packet Tracer varsayılan olarak İngilizce, İspanyolca, Fransızca gibi birço
 |---|---|
 | `tur.ts` | Qt Linguist kaynak çeviri dosyası (XML, insan tarafından okunabilir/düzenlenebilir) |
 | `tur.ptl` | `tur.ts`'den derlenmiş, Packet Tracer'ın doğrudan okuduğu ikili dil dosyası |
+| `kur.bat` | Tek tıkla kurulum betiği (Windows): Packet Tracer'ı otomatik bulur ve dil dosyalarını kopyalar |
 
 **10.298** arayüz metninin tamamı çevrilmiştir (menüler, diyaloglar, hata mesajları, Etkinlik Sihirbazı yardım metinleri, ağ cihazı arayüzleri vb.).
 
-## Kurulum
+## Kurulum (tek tıkla — önerilen)
+
+1. Bu depoyu indirin (**Code > Download ZIP**) ve arşivi bir klasöre çıkarın.
+2. Packet Tracer'ı kapatın.
+3. `kur.bat` dosyasına çift tıklayın ve çıkan Windows güvenlik uyarısında **Evet**'e basın (dosyalar `Program Files` altına kopyalandığı için yönetici izni gerekir).
+4. Betik Packet Tracer kurulumunu kayıt defterinden ve standart dizinlerden otomatik bulur, bulamazsa sizden klasör yolunu ister (klasörü pencereye sürükleyip bırakabilirsiniz).
+5. Packet Tracer'ı açın ve aşağıdaki "Dili etkinleştirme" adımlarını izleyin.
+
+> `kur.bat` yalnızca Windows içindir. Linux/macOS'ta veya betiği çalıştırmak istemiyorsanız aşağıdaki elle kurulumu kullanın.
+
+## Kurulum (elle)
 
 1. Packet Tracer'ı kapatın.
 2. `tur.ts` ve `tur.ptl` dosyalarını Packet Tracer kurulum dizinindeki `languages` klasörüne kopyalayın:
@@ -27,8 +38,13 @@ Packet Tracer varsayılan olarak İngilizce, İspanyolca, Fransızca gibi birço
    C:\Program Files\Cisco Packet Tracer 9.0.0\languages\
    ```
    (Bu klasör yönetici izni gerektirdiğinden dosyaları yönetici olarak çalıştırılan bir terminalden kopyalamanız gerekebilir.)
-3. Packet Tracer'ı açın, **Options > Change Language...** (veya benzeri dil menüsü) üzerinden **Turkish / tur**'u seçin.
-4. Uygulamayı yeniden başlatın.
+
+## Dili etkinleştirme
+
+1. Packet Tracer'ı açın.
+2. **Options > Preferences** (veya **Change Language...**) bölümüne gidin.
+3. **Dil Seçin / Select Language** listesinden `tur.ptl` (veya **Turkish**) seçeneğini işaretleyin.
+4. **Change Language / Dili Değiştir** düğmesine tıklayın ve Packet Tracer'ı yeniden başlatın.
 
 > Not: Sürüme bağlı olarak Packet Tracer'ın dil listesine yeni bir dilin görünmesi için ek bir yapılandırma dosyasında dil kodunun kayıtlı olması gerekebilir. Dil seçeneklerinde "Turkish" görünmüyorsa lütfen bir issue açın.
 
