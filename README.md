@@ -4,7 +4,11 @@ Cisco Packet Tracer için resmî olmayan, topluluk kaynaklı Türkçe dil dosyas
 
 Packet Tracer varsayılan olarak İngilizce, İspanyolca, Fransızca gibi birçok dilde gelir ancak Türkçe desteği bulunmaz. Bu repo, uygulamanın Qt Linguist tabanlı çeviri altyapısını kullanarak arayüzü Türkçeleştirir.
 
-## Ekran görüntüsü
+## Ekran görüntüleri
+
+![Kurulum arayüzü](arayuz.png)
+
+*`Kurulum.bat` ile açılan kurulum penceresi: Packet Tracer klasörünü otomatik bulur ve ekranın tam ortasında açılır.*
 
 ![Türkçeleştirilmiş Packet Tracer Tercihler penceresi](cisco.png)
 
