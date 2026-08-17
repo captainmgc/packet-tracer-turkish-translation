@@ -16,19 +16,23 @@ Packet Tracer varsayılan olarak İngilizce, İspanyolca, Fransızca gibi birço
 |---|---|
 | `tur.ts` | Qt Linguist kaynak çeviri dosyası (XML, insan tarafından okunabilir/düzenlenebilir) |
 | `tur.ptl` | `tur.ts`'den derlenmiş, Packet Tracer'ın doğrudan okuduğu ikili dil dosyası |
-| `kur.bat` | Tek tıkla kurulum betiği (Windows): Packet Tracer'ı otomatik bulur ve dil dosyalarını kopyalar |
+| `Kurulum.bat` | Arayüzlü kurulum (Windows): yönetici izni alır ve `Kurulum.ps1`'i başlatır |
+| `Kurulum.ps1` | Küçük kurulum penceresi (ekranın tam ortasında açılır): klasörü otomatik bulur, seçtirir ve dosyaları kopyalar |
+| `kur.bat` | Arayüzsüz (konsol) kurulum betiği — aynı işi komut satırında yapar |
 
 **10.298** arayüz metninin tamamı çevrilmiştir (menüler, diyaloglar, hata mesajları, Etkinlik Sihirbazı yardım metinleri, ağ cihazı arayüzleri vb.).
 
-## Kurulum (tek tıkla — önerilen)
+## Kurulum (arayüzlü — önerilen)
 
 1. Bu depoyu indirin (**Code > Download ZIP**) ve arşivi bir klasöre çıkarın.
 2. Packet Tracer'ı kapatın.
-3. `kur.bat` dosyasına çift tıklayın ve çıkan Windows güvenlik uyarısında **Evet**'e basın (dosyalar `Program Files` altına kopyalandığı için yönetici izni gerekir).
-4. Betik Packet Tracer kurulumunu kayıt defterinden ve standart dizinlerden otomatik bulur, bulamazsa sizden klasör yolunu ister (klasörü pencereye sürükleyip bırakabilirsiniz).
-5. Packet Tracer'ı açın ve aşağıdaki "Dili etkinleştirme" adımlarını izleyin.
+3. `Kurulum.bat` dosyasına çift tıklayın ve çıkan Windows güvenlik uyarısında **Evet**'e basın (dosyalar `Program Files` altına kopyalandığı için yönetici izni gerekir).
+4. Ekranın tam ortasında açılan pencerede kurulum klasörü otomatik doldurulur; bulunamazsa **Gözat...** ile Packet Tracer klasörünü seçin.
+5. **Kur** düğmesine tıklayın, ardından aşağıdaki "Dili etkinleştirme" adımlarını izleyin.
 
-> `kur.bat` yalnızca Windows içindir. Linux/macOS'ta veya betiği çalıştırmak istemiyorsanız aşağıdaki elle kurulumu kullanın.
+Arayüz istemiyorsanız `kur.bat` aynı işi konsolda yapar.
+
+> Kurulum betikleri yalnızca Windows içindir. Linux/macOS'ta aşağıdaki elle kurulumu kullanın.
 
 ## Kurulum (elle)
 
